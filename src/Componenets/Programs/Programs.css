@@ -1,0 +1,71 @@
+.programHead{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3rem 0 3rem
+}
+.programHead>span{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: 700;
+}
+.programAll{
+    display: flex;
+    gap: 1rem;
+    padding:0 2rem;
+    color: #fff;
+}
+.programItem:hover{
+    background: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+}
+.programItem{
+    background-color: gray;
+    padding: 2rem;
+    margin-top: 2rem;
+    flex-direction: column;
+    flex: 1 1;
+    transition: .6s;
+}
+.programItem>:nth-child(1){
+    fill: #fff;
+    height: 2rem;
+    width: 2rem;
+}
+.programItem>:nth-child(2){
+    font-size: 1rem;
+}
+.programItem>:nth-child(3){
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+.programItem>div{
+    align-items: center;
+    display: flex;
+    gap: 2rem;   
+    cursor: pointer;  
+}
+.programItem>div>:nth-child(1){
+   background-color: none;
+   font-size: 1rem;     
+
+}
+.programItem>div>:nth-child(2){    
+    width: 1rem;
+ }
+ @media screen and (max-width:768px) {
+    .programHead{
+        flex-direction: column;
+        margin: 0 1rem 0 1rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .programHead>span{
+        font-size: 2rem;
+    }
+    .programAll{
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        padding:0 0.6rem;
+    }
+ }

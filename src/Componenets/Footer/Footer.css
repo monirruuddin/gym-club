@@ -1,0 +1,50 @@
+.footer{
+    display: flex;
+    padding: 6rem 5rem;
+    gap:3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.socialLisks{
+    display: flex;
+    gap:3rem;
+
+}
+.socialLisks>img{
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    justify-content: center;
+}
+.footer>img{
+    max-width: 10rem;
+    cursor: pointer;
+
+}
+.footerContainer{
+    position: relative;
+}
+.blurFooter-1{
+    height: 32rem;
+    width: 23rem;
+    top:0;
+    left: 10rem;
+    position: absolute;
+    filter: blur(200px);
+}
+.blurFooter-2{
+    position: absolute;
+    height: 32rem;
+    width: 23rem;
+    right: 15rem;
+    top:2rem;
+    background-color: red;
+    filter: blur(270px);
+}
+
+.socialLisks>img{
+    cursor: pointer;
+}

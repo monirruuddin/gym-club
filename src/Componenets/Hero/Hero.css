@@ -1,0 +1,165 @@
+.hero{
+    justify-content: space-between;
+    display: flex;
+}
+.menuItem{
+    display: flex;
+    justify-content: space-between;
+}
+.leftH{
+    flex: 3;
+    padding: 2rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:7rem
+}
+.heroText{
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    display: flex;
+    flex-direction:column;
+    font-weight: 700;
+    color:#fff;
+}
+.heroText>div:nth-child(3){
+    font-size: 1rem;
+    text-transform: none;
+    letter-spacing:1px;
+    width:80%;
+}
+.figures{
+    display: flex;
+    gap: 3rem;
+}
+.figures>div{
+    display: flex;
+    flex-direction: column;
+}
+.figures>div>span:nth-child(1){
+    font-size: 3rem;
+    color:#fff;
+}
+.figures>div>span:nth-child(2){
+    font-size: 1rem;
+    color:gray;
+    text-transform: uppercase;
+}
+.figuresBtn{
+    gap: 2rem;
+    display: flex;
+}
+.figuresBtn>button{
+    padding: 12px 18px;
+    border: 3px solid var(--orange);
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .5s;
+}
+.figuresBtn>button:nth-child(1){ 
+    background-color: var(--orange);
+}
+.figuresBtn>button:hover{
+    background-color: var(--orange);
+}
+
+.rightH{
+    flex: 1;
+    background-color: var(--orange);
+    position: relative;
+}
+.rightH .btnJoin{
+    padding: 12px 18px;
+    background-color: #fff;
+    color: var(--orange);
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border:0;
+    position: absolute;
+    top:2rem;
+    right: 3rem;
+}
+
+.HeroImg{
+    position: absolute;
+    top:9rem;
+    right: 10rem;
+    width: 27rem;
+}
+.HeroImgB{
+    position: absolute;
+    top:3.2rem;
+    right: 23rem;
+    width: 18rem;
+    z-index: -1;
+}
+.heroBlur{
+    height: 30rem;
+    width: 22rem;
+    left: 0;
+}
+@media screen and (max-width:768px) {
+    .hero{
+        flex-direction: column;
+    }
+    .heroText{
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        display: flex;
+        flex-direction:column;
+        font-weight: 700;
+        color:#fff;
+        text-align: center;
+    }
+    .heroText>div:nth-child(3){
+        font-size: 1rem;
+        font-weight: 400;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+    .figures{
+        display: flex;
+        gap: 2rem;
+        text-align: center;
+    }
+    .figures>div>span:nth-child(1){
+        font-size: 1.2rem;
+    }
+
+    .figures>div>span:nth-child(2){
+        font-size: 0.7rem;
+    }
+    .figuresBtn{
+        gap:0.2rem;
+        flex-direction: column;
+    }
+    .figuresBtn>button{
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    .leftH{
+        gap:3rem
+    }
+    .rightH{
+        background: none;
+        position: relative;
+    }
+    .HeroImg{
+        top:5rem;
+        right: 0rem;
+        width: 14rem;
+        position: relative;
+    }
+    .HeroImgB{
+        top:0rem;
+        left: 0rem;
+        width: 12rem;
+        z-index: -1;
+    }
+
+}
